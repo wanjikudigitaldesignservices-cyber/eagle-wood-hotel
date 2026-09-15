@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="relative pt-20 pb-32 flex content-center items-center justify-center min-h-screen">
       <div className="absolute top-0 w-full h-full">
         <img 
-          src="https://images.unsplash.com/photo-1542314831-c6a4d14d8373?q=80&w=2070&auto=format&fit=crop" 
+          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop" 
           alt="Eagle Wood Hotel Hero" 
           className="w-full h-full object-cover"
         />
