@@ -27,9 +27,9 @@ const Navbar = () => {
             <Link to="/rooms" className={getLinkClass('/rooms')}>Rooms</Link>
             <Link to="/dining" className={getLinkClass('/dining')}>Dining</Link>
             <Link to="/events" className={getLinkClass('/events')}>Conferences</Link>
-            <button className="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
+            <Link to="/booking" className="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
               Book Now
-            </button>
+            </Link>
           </div>
 
           <div className="flex items-center md:hidden">
@@ -46,9 +46,9 @@ const Navbar = () => {
           <Link to="/rooms" onClick={() => setIsOpen(false)} className={`block ${getLinkClass('/rooms')}`}>Rooms</Link>
           <Link to="/dining" onClick={() => setIsOpen(false)} className={`block ${getLinkClass('/dining')}`}>Dining</Link>
           <Link to="/events" onClick={() => setIsOpen(false)} className={`block ${getLinkClass('/events')}`}>Conferences</Link>
-          <button className="w-full bg-gray-900 text-white px-6 py-3 rounded-md mt-4">
+          <Link to="/booking" onClick={() => setIsOpen(false)} className="block w-full text-center bg-gray-900 text-white px-6 py-3 rounded-md mt-4">
             Book Now
-          </button>
+          </Link>
         </div>
       )}
     </nav>

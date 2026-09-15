@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -23,12 +24,12 @@ const Hero = () => {
                 Where rustic elegance meets modern comfort. Discover what makes us Nakuru's premier destination for business, leisure, and luxury combined.
               </p>
               <div className="flex justify-center gap-4">
-                <button className="bg-white text-gray-900 px-8 py-4 rounded-md font-medium hover:bg-gray-100 transition-colors flex items-center gap-2">
+                <Link to="/booking" className="bg-white text-gray-900 px-8 py-4 rounded-md font-medium hover:bg-gray-100 transition-colors flex items-center gap-2">
                   Book Your Stay <ArrowRight size={20} />
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-md font-medium hover:bg-white/10 transition-colors">
+                </Link>
+                <Link to="/rooms" className="border-2 border-white text-white px-8 py-4 rounded-md font-medium hover:bg-white/10 transition-colors block">
                   Explore Facilities
-                </button>
+                </Link>
               </div>
             </div>
           </div>
