@@ -4,31 +4,34 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className="relative pt-20 pb-32 flex content-center items-center justify-center min-h-screen">
+    <div className="relative pt-24 pb-32 flex content-center items-center justify-center min-h-screen overflow-hidden">
       <div className="absolute top-0 w-full h-full">
         <img 
           src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop" 
           alt="Eagle Wood Hotel Hero" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover animate-slow-zoom"
         />
-        <span className="w-full h-full absolute inset-0 opacity-50 bg-black"></span>
+        <span className="w-full h-full absolute inset-0 bg-charcoal/40 mix-blend-multiply"></span>
+        <span className="w-full h-full absolute inset-0 bg-gradient-to-b from-charcoal/60 via-transparent to-charcoal/80"></span>
       </div>
-      <div className="container relative mx-auto px-4 z-10">
+      <div className="container relative mx-auto px-4 z-10 mt-16">
         <div className="items-center flex flex-wrap">
           <div className="w-full lg:w-8/12 mx-auto text-center">
-            <div className="pr-12">
-              <h1 className="text-white font-semibold text-5xl md:text-7xl mb-6">
-                Eagle Wood Hotel Nakuru
+            <div className="flex flex-col items-center">
+              <span className="text-gold-400 uppercase tracking-[0.3em] text-sm mb-6 font-medium">Welcome to</span>
+              <h1 className="text-white font-serif text-6xl md:text-8xl mb-8 leading-tight">
+                Eagle Wood <br/> Hotel
               </h1>
-              <p className="mt-4 text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
-                Where rustic elegance meets modern comfort. Discover what makes us Nakuru's premier destination for business, leisure, and luxury combined.
+              <div className="w-24 h-[1px] bg-gold-500 mb-8"></div>
+              <p className="text-lg text-gray-200 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+                Where rustic elegance meets modern comfort. Discover Nakuru's premier destination for business, leisure, and luxury combined.
               </p>
-              <div className="flex justify-center gap-4">
-                <Link to="/booking" className="bg-white text-gray-900 px-8 py-4 rounded-md font-medium hover:bg-gray-100 transition-colors flex items-center gap-2">
-                  Book Your Stay <ArrowRight size={20} />
+              <div className="flex flex-col sm:flex-row justify-center gap-6">
+                <Link to="/booking" className="bg-gold-500 text-white px-10 py-4 uppercase tracking-widest text-sm hover:bg-gold-600 transition-colors duration-300">
+                  Reserve a Room
                 </Link>
-                <Link to="/rooms" className="border-2 border-white text-white px-8 py-4 rounded-md font-medium hover:bg-white/10 transition-colors block">
-                  Explore Facilities
+                <Link to="/rooms" className="border border-white text-white px-10 py-4 uppercase tracking-widest text-sm hover:bg-white hover:text-charcoal transition-colors duration-300">
+                  Discover More
                 </Link>
               </div>
             </div>
