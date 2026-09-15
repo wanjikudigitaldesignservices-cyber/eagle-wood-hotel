@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <div className="relative pt-20 pb-32 flex content-center items-center justify-center min-h-screen">
-      <div 
-        className="absolute top-0 w-full h-full bg-center bg-cover"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1542314831-c6a4d14d8373?q=80&w=2070&auto=format&fit=crop')"
-        }}
-      >
-        <span className="w-full h-full absolute opacity-50 bg-black"></span>
+      <div className="absolute top-0 w-full h-full">
+        <img 
+          src="https://images.unsplash.com/photo-1542314831-c6a4d14d8373?q=80&w=2070&auto=format&fit=crop" 
+          alt="Eagle Wood Hotel Hero" 
+          className="w-full h-full object-cover"
+        />
+        <span className="w-full h-full absolute inset-0 opacity-50 bg-black"></span>
       </div>
       <div className="container relative mx-auto px-4 z-10">
         <div className="items-center flex flex-wrap">
